@@ -1,6 +1,6 @@
 // Projects.jsx
 
-import { PROJECTS } from "../data/Projects";
+import { PROJECTS } from "../data/projects";
 import SectionHeading from "./SectionHeading";
 import Section from "./Section";
 import ProjectCard from "./ProjectCard";
