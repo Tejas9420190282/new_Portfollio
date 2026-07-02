@@ -8,84 +8,55 @@ import { Code2 } from "lucide-react";
 
 export default function Skills() {
   const { ref, inView } = useInView();
+
   return (
     <Section id="skills" style={{ background: "#070d1a" }}>
       <SectionHeading number="04" title="Skills & Technologies" />
+
       <div
         ref={ref}
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
-          gap: "1.5rem",
-          opacity: inView ? 1 : 0,
-          transform: inView ? "translateY(0)" : "translateY(24px)",
-          transition: "all 0.6s ease",
-        }}
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-700 ${
+          inView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-6"
+        }`}
       >
         {SKILLS.map((cat) => (
           <div
             key={cat.category}
-            style={{
-              background: "#112240",
-              border: "1px solid rgba(100,255,218,0.08)",
-              borderRadius: 6,
-              padding: "1.5rem",
-              transition: "border-color 0.2s",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(100,255,218,0.25)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(100,255,218,0.08)")
-            }
+            className="bg-[#112240] border border-[#64ffda14] rounded-md p-6 transition-all duration-200 hover:border-[#64ffda40]"
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                marginBottom: "1rem",
-              }}
-            >
-              <Code2 size={16} style={{ color: "#64ffda" }} />
-              <h3
-                style={{
-                  fontFamily: "'Fira Code',monospace",
-                  color: "#64ffda",
-                  fontSize: "0.85rem",
-                  fontWeight: 600,
-                }}
-              >
+            {/* Category Heading */}
+            <div className="flex items-center gap-2 mb-4">
+              <Code2 size={16} className="text-[#64ffda]" />
+
+              <h3 className="font-mono text-sm font-semibold text-[#64ffda]">
                 {cat.category}
               </h3>
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2">
               {cat.items.map((item) => (
                 <span
                   key={item}
-                  style={{
-                    fontFamily: "'Fira Code',monospace",
-                    fontSize: "0.775rem",
-                    color: "#8892b0",
-                    background: "rgba(136,146,176,0.06)",
-                    border: "1px solid rgba(136,146,176,0.12)",
-                    padding: "0.25rem 0.6rem",
-                    borderRadius: 3,
-                    transition: "all 0.15s",
-                    cursor: "default",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.color = "#64ffda";
-                    e.currentTarget.style.borderColor =
-                      "rgba(100,255,218,0.25)";
-                    e.currentTarget.style.background = "rgba(100,255,218,0.06)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = "#8892b0";
-                    e.currentTarget.style.borderColor =
-                      "rgba(136,146,176,0.12)";
-                    e.currentTarget.style.background = "rgba(136,146,176,0.06)";
-                  }}
+                  className="
+                    font-mono
+                    text-xs
+                    text-[#8892b0]
+                    bg-[rgba(136,146,176,0.06)]
+                    border
+                    border-[rgba(136,146,176,0.12)]
+                    rounded
+                    px-2.5
+                    py-1
+                    transition-all
+                    duration-150
+                    cursor-default
+                    hover:text-[#64ffda]
+                    hover:border-[rgba(100,255,218,0.25)]
+                    hover:bg-[rgba(100,255,218,0.06)]
+                  "
                 >
                   {item}
                 </span>

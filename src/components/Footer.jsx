@@ -1,34 +1,13 @@
 // Footer.jsx
-
 export default function Footer() {
   return (
-    <footer
-      style={{
-        background: "#070d1a",
-        borderTop: "1px solid rgba(100,255,218,0.06)",
-        padding: "2rem",
-        textAlign: "center",
-      }}
-    >
-      <p
-        style={{
-          fontFamily: "'Fira Code',monospace",
-          color: "#8892b0",
-          fontSize: "0.8rem",
-          marginBottom: "0.5rem",
-        }}
-      >
+    <footer className="bg-[#070d1a] border-t border-[#64ffda]/10 py-8 px-8 text-center">
+      <p className="font-mono text-[#8892b0] text-sm mb-2">
         Designed & Built by{" "}
-        <span style={{ color: "#64ffda" }}>Tejas Shimpi</span>
+        <span className="text-[#64ffda]">Tejas Shimpi</span>
       </p>
-      <p
-        style={{
-          fontFamily: "'Fira Code',monospace",
-          color: "#8892b0",
-          fontSize: "0.72rem",
-          opacity: 0.6,
-        }}
-      >
+
+      <p className="font-mono text-xs text-[#8892b0] opacity-60">
         Built with React · Vite · Tailwind CSS
       </p>
     </footer>

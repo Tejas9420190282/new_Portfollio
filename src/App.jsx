@@ -14,13 +14,13 @@ export default function App() {
     <div style={{ fontFamily: "'Inter',sans-serif", background: "#0a0f1e", minHeight: "100vh" }}>
       <Navbar />
       <Hero />
-      <About /> 
-      <Experience /> 
-      <Projects />
-      <Skills />
+      <About />   
+      <Experience />  
+      <Projects />  
+      <Skills />  
       <Education />
-      <Contact />
-      <Footer />   {/**/}
+      <Contact /> 
+      <Footer />  {/* */} 
     </div>
   );
 }
