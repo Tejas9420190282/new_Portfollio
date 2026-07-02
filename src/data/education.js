@@ -10,4 +10,13 @@ export const EDUCATION = [
       
     ],
   },
+  {
+    degree: "BSc — Computer Science",
+    institution: "Pratibha College, Pune",
+    period: "2019 – 2022",
+    grade: "CGPA: 8.13 / 10",
+    highlights: [
+      
+    ],
+  },
 ];

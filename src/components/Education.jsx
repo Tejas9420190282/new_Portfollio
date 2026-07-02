@@ -12,47 +12,49 @@ export default function Education() {
     <Section id="education" style={{ background: "#0a0f1e" }}>
       <SectionHeading number="05" title="Education" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
         {/* Education */}
         <div>
           <h3 className="flex items-center gap-2 mb-6 font-mono text-sm text-[#64ffda]">
             <GraduationCap size={16} />
             Degree
           </h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {EDUCATION.map((e, i) => (
+              <div
+                key={i}
+                className="bg-[#112240] border  border-[#64ffda1a] rounded-md p-6 hover:border-[#64ffda55] transition-colors duration-300"
+              >
+                <h4 className="text-[#ccd6f6] text-base font-semibold font-sans mb-1">
+                  {e.degree}
+                </h4>
 
-          {EDUCATION.map((e, i) => (
-            <div
-              key={i}
-              className="bg-[#112240] border border-[#64ffda1a] rounded-md p-6 hover:border-[#64ffda55] transition-colors duration-300"
-            >
-              <h4 className="text-[#ccd6f6] text-base font-semibold font-sans mb-1">
-                {e.degree}
-              </h4>
+                <p className="text-[#64ffda] text-sm font-mono mb-1">
+                  {e.institution}
+                </p>
 
-              <p className="text-[#64ffda] text-sm font-mono mb-1">
-                {e.institution}
-              </p>
+                <p className="text-[#8892b0] text-xs font-mono mb-4">
+                  {e.period} • {e.grade}
+                </p>
 
-              <p className="text-[#8892b0] text-xs font-mono mb-4">
-                {e.period} • {e.grade}
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                {e.highlights.map((h) => (
-                  <span
-                    key={h}
-                    className="font-mono text-[11px] text-[#8892b0] bg-[#8892b010] border border-[#8892b020] px-2 py-1 rounded"
-                  >
-                    {h}
-                  </span>
-                ))}
+                <div className="flex flex-wrap gap-2">
+                  {e.highlights.map((h) => (
+                    <span
+                      key={h}
+                      className="font-mono text-[11px] text-[#8892b0] bg-[#8892b010] border border-[#8892b020] px-2 py-1 rounded"
+                    >
+                      {h}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </div>
 
-        {/* Certifications */}
-        {/*
+      {/* Certifications */}
+      {/*
         <div>
           <h3 className="flex items-center gap-2 mb-6 font-mono text-sm text-[#64ffda]">
             <Briefcase size={16} />
@@ -83,7 +85,6 @@ export default function Education() {
           </div>
         </div>
         */}
-      </div>
     </Section>
   );
 }
