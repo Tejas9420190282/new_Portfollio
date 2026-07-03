@@ -21,7 +21,7 @@ export const PROJECTS = [
       "Tailwind CSS",
       "Cron Jobs",
     ],
-    live: "", // Company Project
+    live: "https://trade.hcfinvest.com/user/login", // Company Project
     image: forexTradingImg,
   },
   {
