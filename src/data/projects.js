@@ -1,8 +1,30 @@
 // project.js
 
 import turfFinderImg from "../assets/turf_Finder_img.png";
-import videoConnectImg from "../assets/video-connect.png"
+import videoConnectImg from "../assets/video-connect.png";
+import forexTradingImg from "../assets/forexTradingImg.png";
+
 export const PROJECTS = [
+  {
+    featured: true,
+    title:
+      "Forex Trading Platform — Secure Trading, Wallet & Risk Management System",
+    description:
+      "A secure enterprise-grade Forex trading platform developed for real-time trading operations, wallet management, KYC verification, automated compliance monitoring, risk detection, announcement management, and notification systems. Implemented scalable REST APIs, Socket.IO-based real-time updates, Redis caching, and multiple backend Cron Jobs to automate compliance, fraud detection, and account monitoring",
+
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "JWT",
+      "Tailwind CSS",
+      "Cron Jobs",
+    ],
+    live: "", // Company Project
+    image: forexTradingImg,
+  },
   {
     featured: true,
     title:
@@ -22,8 +44,7 @@ export const PROJECTS = [
     ],
     github: "https://github.com/Tejas9420190282/Hosted_Zoom-Project",
     live: "https://video-conneect.netlify.app/",
-    image:
-      videoConnectImg,
+    image: videoConnectImg,
   },
   {
     featured: true,
