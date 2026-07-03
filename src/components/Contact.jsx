@@ -11,8 +11,7 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  console.log(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
-
+  
   const inputStyle = {
     fontFamily: "'Fira Code',monospace",
     fontSize: "0.875rem",
