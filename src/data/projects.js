@@ -1,6 +1,5 @@
 // project.js
 
-import turfFinderImg from "../assets/turf_Finder_img.png";
 import videoConnectImg from "../assets/video-connect.png";
 import forexTradingImg from "../assets/forexTradingImg.png";
 
@@ -46,28 +45,7 @@ export const PROJECTS = [
     live: "https://video-conneect.netlify.app/",
     image: videoConnectImg,
   },
-  {
-    featured: true,
-    title: "Turf Finder — Online Sports Turf Booking & Management Platform",
-    description:
-      "A full-stack sports turf booking platform that allows users to search, book, and securely pay for sports turfs online. The application includes separate Admin and User dashboards, Razorpay payment integration, PDF pass generation, email-based password recovery, and complete booking management with secure authentication.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MySQL",
-      "Tailwind CSS",
-      "Razorpay",
-      "JWT Authentication",
-      "Nodemailer",
-      "Netlify",
-      "Render",
-    ],
-    github:
-      "https://github.com/Tejas9420190282/Host--Turf-Managment-System-Project---MYSQL2",
-    live: "https://turf-finder-project.netlify.app/",
-    image: turfFinderImg,
-  },
+
   {
     featured: false,
     title: "Airline Reservation System — Flight Booking & Management Platform",
@@ -126,5 +104,26 @@ export const PROJECTS = [
     ],
     github:
       "https://github.com/Tejas9420190282/Hosted-Hospital-Appointment-System-MYSQL",
+  },
+  {
+    featured: false,
+    title: "Turf Finder — Online Sports Turf Booking & Management Platform",
+    description:
+      "A full-stack sports turf booking platform that allows users to search, book, and securely pay for sports turfs online. The application includes separate Admin and User dashboards, Razorpay payment integration, PDF pass generation, email-based password recovery, and complete booking management with secure authentication.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Tailwind CSS",
+      "Razorpay",
+      "JWT Authentication",
+      "Nodemailer",
+      "Netlify",
+      "Render",
+    ],
+    github:
+      "https://github.com/Tejas9420190282/Host--Turf-Managment-System-Project---MYSQL2",
+    live: "https://turf-finder-project.netlify.app/",
   },
 ];
