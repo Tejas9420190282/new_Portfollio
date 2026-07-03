@@ -9,6 +9,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  console.log(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
   const inputStyle = {
     fontFamily: "'Fira Code',monospace",
@@ -23,7 +26,7 @@ export default function Contact() {
     transition: "border-color 0.2s",
     boxSizing: "border-box",
   };
-
+  /* 
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -40,7 +43,48 @@ ${form.message}`;
 
     window.open(whatsappURL, "_blank");
   };
+ */
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    setLoading(true);
 
+    const formData = new FormData();
+
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+
+    formData.append("name", form.name);
+    formData.append("email", form.email);
+    formData.append("message", form.message);
+    formData.append("subject", "New Portfolio Contact");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSent(true);
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        alert(result.message || "Failed to send message.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
+  };
+  
   return (
     <Section id="contact" style={{ background: "#070d1a" }}>
       <SectionHeading number="06" title="Get In Touch" />
@@ -208,7 +252,7 @@ ${form.message}`;
                 (e.currentTarget.style.background = "transparent")
               }
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         )}
