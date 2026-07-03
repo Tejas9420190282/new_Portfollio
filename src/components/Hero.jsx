@@ -8,7 +8,7 @@ export default function Hero() {
   const typed = useTypewriter(
     ["Full Stack Developer.", "React Specialist.", "Backend Developer."],
     80,
-    1800
+    1800,
   );
 
   const buttons = [
@@ -35,21 +35,15 @@ export default function Hero() {
       icon: <FaLinkedin size={20} />,
       href: "https://www.linkedin.com/in/tejas-shimpi-459235206",
     },
-    {
-      icon: <Mail size={20} />,
-      href: "mailto:tejasshimpi877@gmail.com",
-    },
   ];
 
   return (
     <section
-  id="hero"
-  className="relative flex min-h-screen items-center bg-[#0a0f1e] px-8"
->
+      id="hero" 
+      className="relative flex min-h-screen items-center bg-[#0a0f1e] px-8"
+    >
       {/* Grid Background */}
-      <div
-        
-      />
+      <div />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl pt-24">
         <p className="mb-5 font-mono text-base text-[#64ffda]">
