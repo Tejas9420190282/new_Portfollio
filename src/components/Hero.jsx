@@ -1,5 +1,5 @@
 // Hero.jsx
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import useTypewriter from "../hooks/useTypewriter";
 import scrollTo from "../utils/scrollTo";
@@ -46,11 +46,11 @@ export default function Hero() {
       <div />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl pt-24">
-        <p className="mb-5 font-mono text-base text-[#64ffda]">
+        <p className="mb-5 font-mono text-base text-[#64ffda] ">
           Hi, my name is
         </p>
 
-        <h1 className="mb-2 text-[clamp(2.5rem,7vw,5rem)] font-bold leading-tight text-[#ccd6f6]">
+        <h1 className="mb-2 text-[clamp(2.5rem,7vw,5rem)] font-black leading-tight text-[#ccd6f6]">
           Tejas Shimpi.
         </h1>
 
