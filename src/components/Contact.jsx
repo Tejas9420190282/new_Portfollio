@@ -4,14 +4,13 @@ import { useState } from "react";
 import SectionHeading from "./SectionHeading";
 import Section from "./Section";
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  
   const inputStyle = {
     fontFamily: "'Fira Code',monospace",
     fontSize: "0.875rem",
@@ -45,7 +44,7 @@ ${form.message}`;
  */
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     setLoading(true);
 
     const formData = new FormData();
@@ -83,7 +82,7 @@ ${form.message}`;
       setLoading(false);
     }
   };
-  
+
   return (
     <Section id="contact" style={{ background: "#070d1a" }}>
       <SectionHeading number="06" title="Get In Touch" />
@@ -133,6 +132,11 @@ ${form.message}`;
                 icon: <FaLinkedin size={16} />,
                 label: "linkedin.com/in/tejas-shimpi",
                 href: "https://www.linkedin.com/in/tejas-shimpi-459235206",
+              },
+              {
+                icon: <FaWhatsapp size={16} />,
+                label: "+91 94201 90282",
+                href: "https://wa.me/9420190282?text=Hi%20Tejas,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect",
               },
             ].map((item, i) => (
               <a
