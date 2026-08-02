@@ -14,6 +14,7 @@ export const SKILLS = [
       "JWT Auth",
       "WebSockets",
       "Sequelize ORM",
+      "Redis"
     ],
   },
   {
