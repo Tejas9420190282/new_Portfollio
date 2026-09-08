@@ -135,4 +135,17 @@ export const PROJECTS = [
     github: "https://github.com/Tejas9420190282/shadcn-assistant",
     live: "https://marketplace.visualstudio.com/items?itemName=tejas-shimpi.shade-cn-helper",
   },
+  {
+    featured: false,
+
+    title:
+      "Vite React Starter — VS Code Extension for Rapid React Project Setup",
+
+    description:
+      "A VS Code developer productivity extension that streamlines Vite + React project setup by allowing developers to create a project, choose JavaScript or TypeScript, and install multiple commonly used React libraries in a single workflow. The extension automatically installs selected npm packages, configures Tailwind CSS and Axios API services, and opens the generated project directly in VS Code.",
+
+    technologies: ["TypeScript", "Vite", "React", "npm"],
+    github: "https://github.com/Tejas9420190282/vite-react-starter",
+    live: "https://marketplace.visualstudio.com/items?itemName=TejasShimpi.vite-react-starter",
+  },
 ];
