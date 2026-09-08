@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "../data/navLinks";
 import scrollTo from "../utils/scrollTo";
-import resume from "../assets/TejasShimpi_Experiance_CV_Pune.pdf";
+import resume from "../assets/TejasShimpi_MERN.pdf";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +50,7 @@ export default function Navbar() {
 
           <a
             href={resume}
-            download="Tejas_Shimpi_Resume.pdf"
+            download="TejasShimpi_MERN.pdf"
             className="font-mono text-sm text-[#64ffda]
             border border-[#64ffda]
             rounded
@@ -89,7 +89,7 @@ export default function Navbar() {
 
           <a
             href={resume}
-            download="Tejas_Shimpi_Resume.pdf"
+            download="TejasShimpi_MERN.pdf"
             className="w-fit font-mono text-sm text-[#64ffda]
             border border-[#64ffda]
             rounded
