@@ -21,7 +21,7 @@ export const PROJECTS = [
       "Tailwind CSS",
       "Cron Jobs",
     ],
-    live:  "https://trade.hcfinvest.com/user/login", // Company Project
+    live: "https://trade.hcfinvest.com/user/login", // Company Project
     image: forexTradingImg,
   },
   {
@@ -125,5 +125,14 @@ export const PROJECTS = [
     github:
       "https://github.com/Tejas9420190282/Host--Turf-Managment-System-Project---MYSQL2",
     live: "https://turf-finder-project.netlify.app/",
+  },
+  {
+    featured: true,
+    title: "Shadcn Assistant — VS Code Extension for shadcn/ui",
+    description:
+      "A VS Code extension that simplifies shadcn/ui development by allowing developers to discover and search components, detect installed components, install components through the official shadcn CLI, view component details and examples, analyze dependencies, and copy or insert component code directly into the editor.",
+    technologies: ["JavaScript", "shadcn/ui", "React", "npm"],
+    github: "https://github.com/Tejas9420190282/shadcn-assistant",
+    live: "https://marketplace.visualstudio.com/items?itemName=tejas-shimpi.shade-cn-helper",
   },
 ];
