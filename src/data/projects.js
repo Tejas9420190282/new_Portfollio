@@ -127,7 +127,7 @@ export const PROJECTS = [
     live: "https://turf-finder-project.netlify.app/",
   },
   {
-    featured: true,
+    featured: false,
     title: "Shadcn Assistant — VS Code Extension for shadcn/ui",
     description:
       "A VS Code extension that simplifies shadcn/ui development by allowing developers to discover and search components, detect installed components, install components through the official shadcn CLI, view component details and examples, analyze dependencies, and copy or insert component code directly into the editor.",
