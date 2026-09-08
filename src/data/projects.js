@@ -66,23 +66,7 @@ export const PROJECTS = [
     github:
       "https://github.com/Tejas9420190282/Airline_Reservation_System_NodeJs",
   },
-  {
-    featured: false,
-    title: "easyConstruction — Construction Materials & Service Marketplace",
-    description:
-      "A full-stack marketplace platform developed for the construction industry, enabling users to purchase construction materials and connect with skilled workers such as plumbers, painters, carpenters, and electricians. The application features secure authentication, product management, service listings, and a dedicated Admin dashboard for managing inventory, pricing, and customer operations.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MySQL",
-      "Tailwind CSS",
-      "JWT Authentication",
-      "REST APIs",
-      "Netlify",
-      "Render",
-    ],
-  },
+  
   {
     featured: false,
     title:
