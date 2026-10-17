@@ -14,7 +14,7 @@ export const SKILLS = [
       "JWT Auth",
       "WebSockets",
       "Sequelize ORM",
-      "Redis"
+      "Redis",
     ],
   },
   {
@@ -23,7 +23,14 @@ export const SKILLS = [
   },
   {
     category: "DevOps & Tools",
-    items: ["Git & GitHub", "Vercel", "Netlify", "GitHub Actions", "Firebase"],
+    items: [
+      "Git & GitHub",
+      "Docker",
+      "Vercel",
+      "Netlify",
+      "GitHub Actions",
+      "Firebase",
+    ],
   },
   {
     category: "Testing",
